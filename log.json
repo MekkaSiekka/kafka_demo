@@ -1,0 +1,32 @@
+{
+    :error=>java.nio.file.AccessDeniedException: /usr/local/Cellar/logstash/7.10.1/libexec/data/.lock,
+    :backtrace=>[
+        "sun.nio.fs.UnixException.translateToIOException(sun/nio/fs/UnixException.java:90)",
+        "sun.nio.fs.UnixException.rethrowAsIOException(sun/nio/fs/UnixException.java:111)",
+        "sun.nio.fs.UnixException.rethrowAsIOException(sun/nio/fs/UnixException.java:116)",
+        "sun.nio.fs.UnixFileSystemProvider.newFileChannel(sun/nio/fs/UnixFileSystemProvider.java:182)",
+        "java.nio.channels.FileChannel.open(java/nio/channels/FileChannel.java:292)",
+        "java.nio.channels.FileChannel.open(java/nio/channels/FileChannel.java:345)",
+        "org.logstash.FileLockFactory.obtainLock(org/logstash/FileLockFactory.java:89)",
+        "jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)",
+        "jdk.internal.reflect.NativeMethodAccessorImpl.invoke(jdk/internal/reflect/NativeMethodAccessorImpl.java:62)",
+        "jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(jdk/internal/reflect/DelegatingMethodAccessorImpl.java:43)",
+        "java.lang.reflect.Method.invoke(java/lang/reflect/Method.java:566)",
+        "org.jruby.javasupport.JavaMethod.invokeDirectWithExceptionHandling(org/jruby/javasupport/JavaMethod.java:471)",
+        "org.jruby.javasupport.JavaMethod.invokeStaticDirect(org/jruby/javasupport/JavaMethod.java:373)",
+        "RUBY.execute(/usr/local/Cellar/logstash/7.10.1/libexec/logstash-core/lib/logstash/runner.rb:389)",
+        "usr.local.Cellar.logstash.$7_dot_10_dot_1.libexec.vendor.bundle.jruby.$2_dot_5_dot_0.gems.clamp_minus_0_dot_6_dot_5.lib.clamp.command.run(/usr/local/Cellar/logstash/7.10.1/libexec/vendor/bundle/jruby/2.5.0/gems/clamp-0.6.5/lib/clamp/command.rb:67)",
+        "usr.local.Cellar.logstash.$7_dot_10_dot_1.libexec.vendor.bundle.jruby.$2_dot_5_dot_0.gems.clamp_minus_0_dot_6_dot_5.lib.clamp.command.RUBY$method$run$0$__VARARGS__(usr/local/Cellar/logstash/$7_dot_10_dot_1/libexec/vendor/bundle/jruby/$2_dot_5_dot_0/gems/clamp_minus_0_dot_6_dot_5/lib/clamp//usr/local/Cellar/logstash/7.10.1/libexec/vendor/bundle/jruby/2.5.0/gems/clamp-0.6.5/lib/clamp/command.rb)",
+        "usr.local.Cellar.logstash.$7_dot_10_dot_1.libexec.logstash_minus_core.lib.logstash.runner.run(/usr/local/Cellar/logstash/7.10.1/libexec/logstash-core/lib/logstash/runner.rb:273)",
+        "usr.local.Cellar.logstash.$7_dot_10_dot_1.libexec.logstash_minus_core.lib.logstash.runner.RUBY$method$run$0$__VARARGS__(usr/local/Cellar/logstash/$7_dot_10_dot_1/libexec/logstash_minus_core/lib/logstash//usr/local/Cellar/logstash/7.10.1/libexec/logstash-core/lib/logstash/runner.rb)",
+        "usr.local.Cellar.logstash.$7_dot_10_dot_1.libexec.vendor.bundle.jruby.$2_dot_5_dot_0.gems.clamp_minus_0_dot_6_dot_5.lib.clamp.command.run(/usr/local/Cellar/logstash/7.10.1/libexec/vendor/bundle/jruby/2.5.0/gems/clamp-0.6.5/lib/clamp/command.rb:132)",
+        "usr.local.Cellar.logstash.$7_dot_10_dot_1.libexec.lib.bootstrap.environment.<main>(/usr/local/Cellar/logstash/7.10.1/libexec/lib/bootstrap/environment.rb:88)",
+        "java.lang.invoke.MethodHandle.invokeWithArguments(java/lang/invoke/MethodHandle.java:710)",
+        "org.jruby.Ruby.runScript(org/jruby/Ruby.java:1205)",
+        "org.jruby.Ruby.runNormally(org/jruby/Ruby.java:1128)",
+        "org.jruby.Ruby.runNormally(org/jruby/Ruby.java:1146)",
+        "org.jruby.Ruby.runFromMain(org/jruby/Ruby.java:958)",
+        "org.logstash.Logstash.run(org/logstash/Logstash.java:133)",
+        "org.logstash.Logstash.main(org/logstash/Logstash.java:67)"
+    ]
+}

@@ -1,0 +1,2 @@
+[2020-12-20 11:46:40,385] INFO Expiring session 0x1001474f9370001, timeout of 18000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2020-12-20 11:46:42,304] INFO Invalid session 0x1001474f9370001 for client /127.0.0.1:65381, probably expired (org.apache.zookeeper.server.ZooKeeperServer)
