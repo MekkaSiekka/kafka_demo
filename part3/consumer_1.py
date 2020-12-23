@@ -3,6 +3,7 @@
 # for message in consumer:
 #     print (message)
 
+#consume message, check if is fraudulent, then push the data to second topic
 
 from kafka import KafkaConsumer
 
