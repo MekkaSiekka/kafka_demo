@@ -3,7 +3,7 @@ import json
 
 import uuid 
 
-
+import pickle
 from kafka import KafkaProducer
 
 #generate transaction and push to first topic
@@ -14,7 +14,7 @@ LOCATION = ["NYC","LA","SF","ATL"]
 ITEM = ["COMMODITY","ELECTRONIC","FURNITURE"]
 PRICE = [1,10,100,1000,10000]
 ORDERS = 10
-NUM_ITEM = 5
+NUM_ITEM = 100
 NUM_STORE = 3
 
 def pick_random(L):
@@ -55,21 +55,7 @@ def gen_store_data():
         ret.append(gen_store_items())
     return ret
 
-def gen_data():
-    all_data = []
-    #loop all stores
-    for _ in range(ORDERS):
-        loc = pick_random(LOCATION)
-        num_items = random.randint(1, 10)
-        transaction_info = []
-        for _ in range(num_items):
-            item_id =  str(uuid.uuid1())[0:8]
-            num_purchased =  random.randint(1, 10)
-            item_type = pick_random(ITEM)
-            price = pick_random(PRICE)
-            items.append([item_id,item_type,price,num_purchased])   
-        all_data.append(items)
-    return all_data
+
 
 
 
