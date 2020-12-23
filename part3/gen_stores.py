@@ -15,7 +15,7 @@ ITEM = ["COMMODITY","ELECTRONIC","FURNITURE"]
 PRICE = [1,10,100,1000,10000]
 ORDERS = 10
 NUM_ITEM = 100
-NUM_STORE = 3
+NUM_STORE = 5
 
 def pick_random(L):
     return random.choice(L)

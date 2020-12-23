@@ -1,0 +1,12 @@
+{
+    "month": 12,
+    "store_id": "301e9556-44e4-11eb-9c8c-acde48001122",
+    "receipt": [
+        {
+            "item_id": "301e9830",
+            "type": "FURNITURE",
+            "price": 100,
+            "number": 10
+        }
+    ]
+}
