@@ -49,7 +49,6 @@ def gen_transactions(store_data):
     #for all months in the 
     all_transactions = []
     for month in range(1,13):
-        
         for _ in range(TRNASACTION_PER_MONTH):   
             transaction = {}
             transaction["month"] = month 
@@ -63,6 +62,7 @@ def gen_transactions(store_data):
             #print(transaction)
             all_transactions.append(transaction)
     #print(json.dumps(all_transactions,indent = 4))
+    all_transactions.append({"month":13})
     return all_transactions       
 
 
@@ -94,6 +94,7 @@ store_data = pickle.load(dbfile)
 #pretty_print(store_data)
 dbfile.close() 
 all_transactions = gen_transactions(store_data)
+all_transactions
 #pretty_print(all_transactions)
 for transaction in all_transactions:
     process_transaction(transaction)
